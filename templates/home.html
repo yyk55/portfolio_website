@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<link type="text/css" rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
+
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    
+	<div class="scroll-wrapper">
+		
+		<div class="top-image">
+			<p>
+			<img class="top-img" src="static/images/hongkong_original.jpg" style="width:100%;height:auto;">
+			</p>
+			<div class="social-icons">
+                <a target="_blank" href="https://github.com/yyk55">
+                    <img class="social-logo" src="static/images/github.svg">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/yykim/">
+                    <img class="social-logo" src="static/images/linkedin-logo.svg">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/theyykim/">
+                    <img class="social-logo" src="static/images/insta.svg">
+                </a>	
+            </div>
+		</div>
+		
+        <div class="middle-text">
+			<p class="text-title desktop-view">Yy Kim</p>
+            <p class="text-title mobile-view">Yoon-young Kim</p>
+
+        </div>
+		
+		
+        <div class="bottom-text">
+            <p class="text-content">I am a creator with scientific and artistic mind at heart. I love to dig into complex problems and solve it in a beautiful way, build tools with different types of data in a creative way
+			, and making visually eye-catching stuffs through complex algorithms.</p>
+
+            <p class="text-content">
+                I am currently working in <a class="link" href="https://www.criteo.com/">Criteo</a>, the global ad-tech company headquartered in Paris, as a data analyst at data science & analytics team 
+				after studying Financial Engineering at <a class="link" href="https://www.kaist.ac.kr/en/">KAIST.</a></p>
+            <p class="text-content">
+				My main role here is to build automated tools delivering insights from data to the company's stakeholders; from small projects like building an automated report generator tool to large scale projects such as
+				building a software platform for simulating/forecasting the future advertisement performance. 
+				To fully accomplish these tasks, I leverage on technical skill sets including the scopes in data analysis, data engineering, and software development such as SQL, Hive/Presto/PySpark, ETL tools, Python.</p>
+
+			<p class="text-content">
+                I am also an AI artist who is eager to make artworks inspiring people with artificial intelligence algorithms. </p>
+            <p class="text-content">
+				I have being participated in AI Art Competition for New Artists organized by <a class="link" href="https://aia-gallery.imweb.me/">GALLERY AI.A</a>. 
+				I have always been interested in art because I was the one who got comforts from the artworks which gave a sense of awe and beauty. Giving back this comfort to others would be one of the goals in my life.
+				The main algorithms I focus on to create artworks include <a class="link" href="https://arxiv.org/abs/1508.06576">Neural Style Transfer</a>, 
+				<a class="link" href="https://arxiv.org/abs/1406.2661">Generative Adversarial Networks</a>, and etc.</p>
+				
+            <p class="text-content">Besides that, I love writing codes, learning new things, traveling abroad(Oh, I hate the Covid-19), and eating delicious foods. 
+			Moreover, I play the cello and the piano and I have experiences learning to play fencing and racquetball. I'm enthusiastic about my life balancing between its complexity and simplicity.</p>
+
+            <p class="text-content">You can find me on the social networks above or please email me <a class="link" href="mailto:yoonyoung.kim@outlook.com" target="_top">here</a>.
+            </p>
+
+            <p class="text-content">
+			<a href="experiences">For more about me, please visit my experience</a>
+			<a href="gallery">or gallery.</a></p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

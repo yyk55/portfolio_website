@@ -1,0 +1,164 @@
+.print-detail img{width:100%;height:auto}@-webkit-keyframes fademein{0%{opacity:0}to{opacity:1}}@keyframes fademein{0%{opacity:0}to{opacity:1}}.info-link,.info-link-close,.macrolink,.nav-link,.site-title,.slide-count,.thumbslink{-webkit-animation:fademein 1s;animation:fademein 1s}.zoom-in-sm .info-link,.zoom-in-sm .info-link-close,.zoom-in-sm .macrolink,.zoom-in-sm .nav-link,.zoom-in-sm .site-title,.zoom-in-sm .slide-count,.zoom-in-sm .thumbslink,.zoom-out-sm .info-link,.zoom-out-sm .info-link-close,.zoom-out-sm .macrolink,.zoom-out-sm .nav-link,.zoom-out-sm .site-title,.zoom-out-sm .slide-count,.zoom-out-sm .thumbslink{display:none}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+
+/*!
+ * animsition v4.0.2
+ * A simple and easy jQuery plugin for CSS animated page transitions.
+ * http://blivesta.github.io/animsition
+ * License : MIT
+ * Author : blivesta (http://blivesta.com/)
+ */
+
+.animsition{width:100%;height:100%}
+.animsition,.animsition-overlay{position:relative;opacity:0;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animsition-overlay-slide{position:fixed;z-index:1;width:100%;height:100%;background-color:#ddd}
+.animsition-loading,.animsition-loading:after{width:32px;height:32px;position:fixed;top:50%;left:50%;margin-top:-16px;margin-left:-16px;border-radius:50%;z-index:100}
+.animsition-loading{background-color:transparent;border:5px solid rgba(0,0,0,.2);border-left-color:#eee;transform:translateZ(0);-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-duration:.8s;animation-duration:.8s;-webkit-animation-name:animsition-loading;animation-name:animsition-loading}
+
+@font-face{font-family:Cormorant;font-weight:700;font-style:normal;src:url(/assets/fonts/Cormorant-Bold.woff2) format("woff2"),url(/assets/fonts/Cormorant-Bold.woff) format("woff"),url(/assets/fonts/Cormorant-Bold.ttf) format("truetype")}
+@font-face{font-family:Cormorant;font-weight:700;font-style:italic;src:url(/assets/fonts/Cormorant-BoldItalic.woff2) format("woff2"),url(/assets/fonts/Cormorant-BoldItalic.woff) format("woff"),url(/assets/fonts/Cormorant-BoldItalic.ttf) format("truetype")}
+@font-face{font-family:Cormorant;font-weight:400;font-style:normal;src:url(/assets/fonts/Cormorant-Regular.woff2) format("woff2"),url(/assets/fonts/Cormorant-Regular.woff) format("woff"),url(/assets/fonts/Cormorant-Regular.ttf) format("truetype")}@font-face{font-family:Cormorant;font-weight:400;font-style:italic;src:url(/assets/fonts/Cormorant-Italic.woff2) format("woff2"),url(/assets/fonts/Cormorant-Italic.woff) format("woff"),url(/assets/fonts/Cormorant-Italic.ttf) format("truetype")}
+@font-face{font-family:Cormorant;font-weight:300;font-style:normal;src:url(/assets/fonts/Cormorant-Light.woff2) format("woff2"),url(/assets/fonts/Cormorant-Light.woff) format("woff"),url(/assets/fonts/Cormorant-Light.ttf) format("truetype")}@font-face{font-family:Cormorant;font-weight:300;font-style:italic;src:url(/assets/fonts/Cormorant-LightItalic.woff2) format("woff2"),url(/assets/fonts/Cormorant-LightItalic.woff) format("woff"),url(/assets/fonts/Cormorant-LightItalic.ttf) format("truetype")}@font-face{font-family:Nimbus;font-weight:900;font-style:normal;src:url(/assets/fonts/NimbusSansBlackExt.woff2) format("woff2"),url(/assets/fonts/NimbusSansBlackExt.woff) format("woff"),url(/assets/fonts/NimbusSansBlackExt.ttf) format("truetype")}@font-face{font-family:Nimbus;font-weight:700;font-style:normal;src:url(/assets/fonts/NimbusSansBoldExt.woff2) format("woff2"),url(/assets/fonts/NimbusSansBoldExt.woff) format("woff"),url(/assets/fonts/NimbusSansBoldExt.ttf) format("truetype")}@font-face{font-family:Nimbus;font-weight:400;font-style:normal;src:url(/assets/fonts/NimbusSansRegExt.woff2) format("woff2"),url(/assets/fonts/NimbusSansRegExt.woff) format("woff"),url(/assets/fonts/NimbusSansRegExt.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:100;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-UltLtEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-UltLtEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-UltLtEx.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:200;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-ThEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-ThEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-ThEx.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:300;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-LtEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-LtEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-LtEx.ttf) format("truetype")}
+@font-face{font-family:HelveticaNeueEx;font-weight:400;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-Ex.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-Ex.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-Ex.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:500;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-MdEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-MdEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-MdEx.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:600;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-MdEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-MdEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-MdEx.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:700;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-BdEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-BdEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-BdEx.ttf) format("truetype")}@font-face{font-family:HelveticaNeueEx;font-weight:800;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-HvEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-HvEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-HvEx.ttf) format("truetype")}
+@font-face{font-family:HelveticaNeueEx;font-weight:900;font-style:normal;src:url(/assets/fonts/HelveticaNeueLTStd-BlkEx.woff2) format("woff2"),url(/assets/fonts/HelveticaNeueLTStd-BlkEx.woff) format("woff"),url(/assets/fonts/HelveticaNeueLTStd-BlkEx.ttf) format("truetype")}#info-page p:first-child,.about .main p:first-child{font-family:HelveticaNeueEx;font-size:1.25rem;line-height:1.4;margin-top:0;margin-bottom:3rem;font-weight:500}#info-page p:first-child strong,.about .main p:first-child strong{font-weight:600}#delivery p,.print-detail p,p{font-size:1.5rem;line-height:1.1;margin-top:0;margin-bottom:1.625rem}#delivery p em,#delivery p strong,.print-detail p em,.print-detail p strong,p em,p strong{font-weight:700}:root{font-size:75%}html{font-size:100%;line-height:1.2;font-family:Cormorant,Georgia,serif;font-weight:400;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body.light *{color:#000}.site-title,.slide-count{font-size:.75rem;line-height:1;margin-top:1.125rem;margin-bottom:1.125rem;text-transform:uppercase;font-weight:800;letter-spacing:.0625rem;color:#000}.site-title a,.slide-count a{-webkit-animation:fadein 2s;animation:fadein 2s;color:#000;display:block;min-width:100%}
+
+.h1,h1{font-size:2.6875rem;line-height:1.2558139535;margin-top:1.5rem;margin-bottom:1.5rem}.h2,h2{font-size:2rem;line-height:1.6875;margin-top:0;margin-bottom:0}.h3,.h4,.h5,.h6,h3,h4,h5,h6{font-size:1rem;line-height:2.1;margin-top:0;margin-bottom:2.25rem}
+ol,ul{font-size:1rem;line-height:1.2;margin-top:0;margin-bottom:2.25rem}
+ol ol,ol ul,ul ol,ul ul{margin-bottom:0;margin-top:0}
+dl{font-size:1rem;line-height:1.2;margin-top:0;margin-bottom:2.25rem}
+dl dt{font-weight:600}
+blockquote,dl dd{font-style:italic}
+blockquote{font-size:1rem;line-height:1.2;margin-top:0;margin-bottom:2.25rem}
+
+
+img{width:100%;height:auto}
+figure{margin:0;padding:0}
+
+#site-header-buffer{height:96px}
+
+
+.featured img{display:block;transform:translateZ(0)}
+.featured figure{position:relative;padding:0;margin:0}
+.featured figure a{display:block;position:relative;color:#fff}
+.featured figcaption{position:absolute;top:50%;left:50%;color:#fff;transform:translate(-50%,-50%);font-family:HelveticaNeueEx;font-weight:900;text-transform:uppercase;font-size:1rem;line-height:2.1;margin-top:0;margin-bottom:2.25rem;letter-spacing:2px;opacity:0}
+
+.mobile-true .featured figcaption{opacity:1}
+.mobile-true .featured figcaption .species{display:none}
+
+#collection-section .featured *,#page-prints .featured *,#projects-section .featured *{transition:opacity 1s}
+#collection-section .featured a:hover img,#page-prints .featured a:hover img,#projects-section .featured a:hover img{opacity:.5}
+#collection-section .featured a:hover figcaption,#page-prints .featured a:hover figcaption,#projects-section .featured a:hover figcaption{opacity:1}
+
+.grid{display:grid;grid-template-columns:repeat(12,1fr);grid-gap:1em}
+.grid-collections{display:grid;grid-template-columns:1fr 1fr;grid-gap:1.5rem}
+.grid-collections a,.grid-collections figure{width:100%;height:100%;line-height:0}
+.grid-collections img{width:100%;height:100%;-o-object-fit:fill;object-fit:fill;transform:none}
+.grid__item{padding:1rem}
+
+
+@media screen and (prefers-reduced-motion:reduce){.tobi>button,.tobi__slider:not(.tobi__slider--is-dragging){transition:none}.tobi>button{will-change:opacity}.tobi>button:active,.tobi>button:focus,.tobi>button:hover{transform:none}}
+@media only screen and (min-width:320px){:root{font-size:75%}}@media only screen and (min-width:480px){:root{font-size:75%}}
+@media only screen and (min-width:640px){:root{font-size:87.5%}}
+@media only screen and (min-width:800px){:root{font-size:100%}}
+@media only screen and (min-width:960px){:root{font-size:100%}}
+@media only screen and (min-width:1140px){:root{font-size:100%}}
+@media screen and (min-width:800px){#site-header{height:96px}#logo{grid-column:1}#menu{display:flex;align-items:center;justify-content:flex-end}#site-header .info-link,#site-header .info-link-close,#site-header .nav-link{display:none}.pagelist{left:12.5rem;text-align:left;width:auto}#info-page .image-left{float:left;margin-right:2.75rem;width:50%}#info-page .image-right{float:right;margin-left:2.75rem;width:50%}.grid-list{grid-template-columns:1fr 1fr}.grid-card-img img{padding:5% 10%}.grid-card-detail{font-size:.875rem;line-height:1.5;margin-top:0;margin-bottom:0}.grid-card-detail p{font-size:1rem;line-height:1.2;margin-top:1rem;margin-bottom:0}.delivery-inner{max-width:65%}}
+@media screen and (max-width:800px){#logo{text-align:center}#logo a{margin:0 auto}#site-footer,#site-footer-buffer{height:34px}#middle .info-link,#middle .info-link-close,#middle .nav-link{display:none}.pagelist{grid-template-columns:58px 1fr 58px;padding:2.125rem 1rem}.pagelist a{font-size:2.625rem;line-height:1;margin-top:0;margin-bottom:.75rem}.holy-grail{grid-template-columns:58px 1fr 58px}.macro-nav{display:none}.grid-card{grid-template-rows:auto auto}#middle .slide-wrap{max-width:calc(100vw - 116px)}.mobile-true #middle .slide-wrap{max-width:calc(100vw - 48px)}}
+@media screen and (max-width:960px){.featured figure{grid-column:1/span 12!important}}
+@media screen and (max-width:1440px){.featured figure a{transform:translateZ(0)!important}}
+@media screen and (max-width:640px){.thumbs{padding:0 3rem}.thumbs img{height:auto;width:100%}}
+@media screen and (min-width:960px){.grid-list{grid-template-columns:1fr 1fr 1fr}}
+@media screen and (min-width:1140px){.grid-list{grid-template-columns:1fr 1fr 1fr 1fr}}
+@media screen and (min-width:1024px){.print-detail .main{float:left;margin-right:-100%;width:56.67%;margin-left:43.33%;clear:none}.print-detail .flank{float:left;margin-right:-100%;width:39.33%;margin-left:0;clear:none}}
+@media screen and (max-width:1024px){.print-detail img{margin:0 auto 3rem;display:block}}
+@media screen and (max-width:1280px){.about{grid-template-columns:1fr}}
+@media screen and (min-width:1200px){.exhibit .main{width:56.67%;margin-left:43.33%}.exhibit .flank,.exhibit .main{float:left;margin-right:-100%;clear:none}.exhibit .flank{width:39.33%;margin-left:0}}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;/* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 95%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-family:Cormorant
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

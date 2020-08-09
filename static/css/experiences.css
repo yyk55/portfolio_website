@@ -1,0 +1,52 @@
+.date {
+  display:block;
+  color: #303030;
+  font-size: 20px;
+}
+
+.title{
+  color: #1377BD;
+  font-size: 16px;
+  margin: 4px;
+  font-weight:500;
+}
+
+.title:hover {
+  text-decoration: none !important;
+}
+
+.content{
+  display:block;
+  color: #303030;
+  margin:4px;
+  font-weight:300;
+}
+
+.container{
+  max-width:750px;
+}
+
+.icon-title{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+   display: flex; 
+   justify-content: flex-end
+}
+
+.social-logo{
+    height:24px;
+    width:24px;
+    margin: 0px 12px 0px 2px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    text-decoration:none;
+}
+
+.social-logo:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    text-decoration:none;
+}

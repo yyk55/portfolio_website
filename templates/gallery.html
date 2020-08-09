@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/gallery.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container" id="projects-section">
+<!-- Header Buffer -->
+<div id="site-header-buffer">&nbsp;</div>
+      
+<!-- featured images -->
+<section class="featured grid">
+
+
+
+
+  <figure class="grid__item" style="grid-column: 1 / span 4;">
+
+    <a style="transform: translate3d(0px, 50px, 0px)">
+    
+	<img class="myImages" id="myImg" src="static/images/seoul_1.jpg" alt="Seoul 1">
+	
+        <figcaption>
+          Seoul 1        </figcaption>
+    </a>
+
+  </figure>
+
+
+  <figure class="grid__item" style="grid-column: 5 / span 5;">
+
+    <a style="transform: translate3d(0px, 0px, 0px)">
+      <img class="myImages" id="myImg" src="static/images/hongkong_1.png" alt="Hong Kong 1">
+        <figcaption>
+          Hong Kong 1 - Algorithm modified       </figcaption>
+    </a>
+
+  </figure>
+
+
+
+
+
+  <figure class="grid__item" style="grid-column: 10 / span 3;">
+
+    <a style="transform: translate3d(0px, 25px, 0px)">
+      <img class="myImages" id="myImg" alt="Seoul 2" src="static/images/seoul_2.jpg">
+        <figcaption>
+           Seoul 2      </figcaption>
+    </a>
+
+  </figure>
+
+
+
+
+  <figure class="grid__item" style="grid-column: 5 / span 5;">
+
+    <a style="transform: translate3d(0px, -150px, 0px)">
+      <img class="myImages" id="myImg" alt="Bangkok 1" src="static/images/bangkok_1.jpg">
+        <figcaption>
+         Bangkok 1      </figcaption>
+    </a>
+
+  </figure>
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var images = document.getElementsByClassName("myImages");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+	img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+</section>
+
+
+    </div>
+
+
+
+
+{% endblock %}
