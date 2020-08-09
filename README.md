@@ -1,24 +1,12 @@
-# www.rish.space
+# www.theyykim.com
 
-This is [my personal corner on the web](http://rish.space). I quite like the domain name; conveys exactly what it is. 
-
-
-# Screenshots
-<p float="left">
-  <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/home.png" width="400">
-  <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png" width="400">
-</p>
+This is [my personal website for the experiences and works I have done](http://www.theyykim.com). 
 
 # Technology
 
-Developed using Python Flask, and a lot of CSS and Jinja2.
-Currently hosted on Heroku. 
+The website is developed by using Python Flask, CSS, Javascripts and Jinja2.
+It is hosted on Namecheap. 
 
-Sidenote: I struggle to understand why web UI isn't as easy to make as Android's.
+# References
 
-# I want to use this!
-
-You're free to use this for your own personal portfolio; but please do write to me telling me you have!
- 
- - change the static content wherever it is to suit your work.
- - change the `experiences.json` and `projects.json` files with your work and projects. 
+I've refered to the work from https://github.com/crearo/portfolio by Rishabh Bhardwaj and I would like to thank him for it! 
